@@ -25,8 +25,16 @@ requirements:
 
 test:
   imports:
-    - slack
-    - slack.rtm
+    - slack_sdk
+    - slack_sdk.web
+    - slack_sdk.webhook
+    - slack_sdk.signature
+    - slack_sdk.socket_mode
+    - slack_sdk.audit_logs
+    - slack_sdk.scim
+    - slack_sdk.oauth
+    - slack_sdk.models
+    - slack_sdk.rtm
   commands:
     - pip check
   requires:
