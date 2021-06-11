@@ -10,7 +10,7 @@ source:
   sha256: 195f044e02a2844579a7a26818ce323e85dde8de224730c859644918d793399e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,8 +20,6 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    # listed as extra but testing fails without
-    - aiohttp >=3.7.3,<4
 
 test:
   imports:
@@ -34,9 +32,13 @@ test:
     - slack_sdk.scim
     - slack_sdk.oauth
     - slack_sdk.models
-    - slack_sdk.rtm
+    # The old RTM API has a dependency on aiohttp
+    # - slack_sdk.rtm  
+    - slack_sdk.rtm_v2
   commands:
     - pip check
+    - conda install -y aiohttp
+    - python -c "import slack_sdk.rtm"
   requires:
     - pip
 
@@ -51,3 +53,4 @@ about:
 extra:
   recipe-maintainers:
     - xylar
+    - maresb
