@@ -32,6 +32,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-slack--sdk-green.svg)](https://anaconda.org/conda-forge/slack-sdk) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/slack-sdk.svg)](https://anaconda.org/conda-forge/slack-sdk) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/slack-sdk.svg)](https://anaconda.org/conda-forge/slack-sdk) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/slack-sdk.svg)](https://anaconda.org/conda-forge/slack-sdk) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-slack_sdk-green.svg)](https://anaconda.org/conda-forge/slack_sdk) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/slack_sdk.svg)](https://anaconda.org/conda-forge/slack_sdk) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/slack_sdk.svg)](https://anaconda.org/conda-forge/slack_sdk) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/slack_sdk.svg)](https://anaconda.org/conda-forge/slack_sdk) |
 
 Installing slack-sdk
 ====================
@@ -43,10 +44,10 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `slack-sdk` can be installed with:
+Once the `conda-forge` channel has been enabled, `slack-sdk, slack_sdk` can be installed with:
 
 ```
-conda install slack-sdk
+conda install slack-sdk slack_sdk
 ```
 
 It is possible to list all of the versions of `slack-sdk` available on your platform with:
