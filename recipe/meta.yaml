@@ -1,5 +1,5 @@
 {% set name = "slack-sdk" %}
-{% set version = "3.12.0" %}
+{% set version = "3.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/slack_sdk-{{ version }}.tar.gz
-  sha256: a384d91c10229f94a9b2cae2ec5af2a683a3d5aee1287c01238630ab42747287
+  sha256: aae6ce057e286a5e7fe7a9f256e85b886eee556def8e04b82b08f699e64d7f67
 
 build:
   number: 0
