@@ -1,11 +1,11 @@
-About slack-sdk
-===============
+About slack-sdk-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/slack-sdk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/slackapi/python-slack-sdk
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/slack-sdk-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Slack API Platform SDK for Python
 
