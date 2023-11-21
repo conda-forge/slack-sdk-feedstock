@@ -10,7 +10,7 @@ source:
   sha256: 172e1b315994c61cbeb17568da0822590c6883be05b96a980e64e7f3db146da7
 
 build:
-  number: 0
+  number: 1
 
 outputs:
   - name: slack-sdk
