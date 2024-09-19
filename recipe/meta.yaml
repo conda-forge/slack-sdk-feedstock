@@ -16,7 +16,7 @@ outputs:
   - name: slack-sdk
     build:
       noarch: python
-      script: python -m pip install . -vv
+      script: python -m pip install . -vv --no-deps --no-build-isolation
     requirements:
       host:
         - pip
