@@ -11,6 +11,11 @@ source:
 
 build:
   number: 1
+  noarch: python
+
+requirements:
+  host:
+    - python {{ python_min }}
 
 outputs:
   - name: slack-sdk
