@@ -6,11 +6,16 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/slack_sdk-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/slack_sdk-{{ version }}.tar.gz
   sha256: 5e109847f6b6a22d227609226ba4ed936109dc00675bddeb7e0bee502d3ee7e0
 
 build:
-  number: 0
+  number: 1
+  noarch: python
+
+requirements:
+  host:
+    - python {{ python_min }}
 
 outputs:
   - name: slack-sdk
@@ -20,10 +25,10 @@ outputs:
     requirements:
       host:
         - pip
-        - python >=3.6
+        - python {{ python_min }}
         - setuptools
       run:
-        - python >=3.6
+        - python >={{ python_min }}
     test:
       imports:
         - slack_sdk
@@ -36,14 +41,14 @@ outputs:
         - slack_sdk.oauth
         - slack_sdk.models
         # The old RTM API has a dependency on aiohttp
-        # - slack_sdk.rtm
+        - slack_sdk.rtm
         - slack_sdk.rtm_v2
       commands:
         - pip check
-        - conda install -y aiohttp
-        - python -c "import slack_sdk.rtm"
       requires:
+        - python {{ python_min }}
         - pip
+        - aiohttp
   - name: slack_sdk
     build:
       noarch: python
@@ -53,6 +58,8 @@ outputs:
     test:
       imports:
         - slack_sdk
+      requires:
+        - python {{ python_min }}
 
 about:
   home: https://github.com/slackapi/python-slack-sdk
