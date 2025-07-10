@@ -32,7 +32,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-slack--sdk-green.svg)](https://anaconda.org/conda-forge/slack-sdk) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/slack-sdk.svg)](https://anaconda.org/conda-forge/slack-sdk) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/slack-sdk.svg)](https://anaconda.org/conda-forge/slack-sdk) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/slack-sdk.svg)](https://anaconda.org/conda-forge/slack-sdk) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-slack_sdk-green.svg)](https://anaconda.org/conda-forge/slack_sdk) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/slack_sdk.svg)](https://anaconda.org/conda-forge/slack_sdk) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/slack_sdk.svg)](https://anaconda.org/conda-forge/slack_sdk) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/slack_sdk.svg)](https://anaconda.org/conda-forge/slack_sdk) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-slack__sdk-green.svg)](https://anaconda.org/conda-forge/slack_sdk) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/slack_sdk.svg)](https://anaconda.org/conda-forge/slack_sdk) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/slack_sdk.svg)](https://anaconda.org/conda-forge/slack_sdk) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/slack_sdk.svg)](https://anaconda.org/conda-forge/slack_sdk) |
 
 Installing slack-sdk
 ====================
