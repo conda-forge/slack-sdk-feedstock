@@ -40,14 +40,14 @@ outputs:
             - slack_sdk.scim
             - slack_sdk.oauth
             - slack_sdk.models
-            # The old RTM API has a dependency on aiohttp.
-            - slack_sdk.rtm
-            - slack_sdk.rtm_v2
           pip_check: true
           python_version: ${{ python_min }}.*
-        requirements:
+      - requirements:
           run:
+            - python ${{ python_min }}.*
             - aiohttp
+        script:
+          - python -c "import slack_sdk.rtm, slack_sdk.rtm_v2"
   - package:
       name: slack_sdk
     build:
