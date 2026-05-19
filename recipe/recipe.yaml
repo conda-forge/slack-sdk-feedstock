@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: slack-sdk
-  version: 3.41.0
+  version: "3.42.0"
 
 recipe:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/slack_sdk-${{ version }}.tar.gz
-  sha256: eb61eb12a65bebeca9cb5d36b3f799e836ed2be21b456d15df2627cfe34076ca
+  sha256: 873db9e1f632ac650ffdbf9d8ba825f3e9e7e576a1e4f9604ccb2a15b3727e3d
 
 build:
   number: 0
